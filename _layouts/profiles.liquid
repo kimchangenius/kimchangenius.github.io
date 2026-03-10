@@ -6,7 +6,8 @@ layout: page
     {% if page.profiles %}
       {% for profile in page.profiles %}
         <hr>
-        <div style="display: flex; align-items: flex-start; gap: 2rem; flex-direction: {% if profile.align == 'right' %}row-reverse{% else %}row{% endif %};">
+        {#<div style="display: flex; align-items: flex-start; gap: 2rem; flex-direction: {% if profile.align == 'right' %}row-reverse{% else %}row{% endif %};">#}
+        <div style="display: flex; align-items: center; gap: 2rem; flex-direction: {% if profile.align == 'right' %}row-reverse{% else %}row{% endif %};">
           {% if profile.image %}
             <div class="profile" style="flex-shrink: 0; width: 200px;">
               {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
