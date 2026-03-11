@@ -2,14 +2,29 @@
 layout: page
 title: Contact
 permalink: /contact/
-description: How to get in touch.
+description: We always welcome new member.
 nav: true
 nav_order: 5
+map: true
 ---
 
-You can reach me at:
+The lab is looking for excellent undergraduate and graduate students. If you want to do research in HDI Lab, please contact Donghwa Shin.
 
-- Email: your-email@example.com
-- Office: 123 your address street, Your City, State 12345
+- **Email:** dhshin@kw.ac.kr
+- **Office:** Room 704, Saebit-gwan, 20 Gwangun-ro, Nowon-gu, Seoul 01897, Republic of Korea
+- **Number:** 82+ 2-940-8474
 
-Please replace this information with your actual contact details.
+## Location
+
+```geojson
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [127.0586, 37.6198]
+  },
+  "properties": {
+    "name": "HDI Lab - Kwangwoon University Saebit-gwan 704"
+  }
+}
+```
