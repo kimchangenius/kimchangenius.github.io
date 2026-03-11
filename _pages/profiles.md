@@ -9,7 +9,7 @@ nav_order: 1
 profiles:
   # Professor
   - content: about_shin.md
-    image: prof_pic.jpg
+    image: shindh_picture.jpg
     align: left
   # Undergraduate Researchers
   - content: about_kimcj.md
