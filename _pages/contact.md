@@ -13,7 +13,7 @@ The lab is looking for excellent undergraduate and graduate students. If you wan
 - **Office:** Room 704, Saebit-gwan, 20 Gwangun-ro, Nowon-gu, Seoul 01897, Republic of Korea
 - **Number:** 82+ 2-940-8474
 
-## Location
+### Location
 
 <div id="contact-map" style="width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 8px; outline: none;"></div>
 
@@ -28,11 +28,10 @@ The lab is looking for excellent undergraduate and graduate students. If you wan
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  var map = L.map('contact-map', { zoomControl: false }).setView([37.61979772807333, 127.06093970420036], 18);
-  // L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=DFFxHHmQRoAl3CPIlnBb', {
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  var map = L.map('contact-map', { zoomControl: false }).setView([37.61979772807333, 127.06093970420036], 17);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="https://carto.com/">CARTO</a>'
+    attribution: '&copy; <a href=OpenStreetMap</a>'
   }).addTo(map);
   L.marker([37.61979772807333, 127.06093970420036]).addTo(map)
     .bindPopup('<b>HDI Lab</b><br>광운대학교 새빛관 704호')
