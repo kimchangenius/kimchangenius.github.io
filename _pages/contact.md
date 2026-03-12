@@ -30,10 +30,9 @@ The lab is looking for excellent undergraduate and graduate students. If you wan
 document.addEventListener("DOMContentLoaded", function() {
   var map = L.map('contact-map', { zoomControl: false }).setView([37.61979772807333, 127.06093970420036], 18);
   // L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=DFFxHHmQRoAl3CPIlnBb', {
-  L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     maxZoom: 19,
-    tileSize: 512,
-    zoomOffset: -1
+    attribution: '&copy; <a href="https://carto.com/">CARTO</a>'
   }).addTo(map);
   L.marker([37.61979772807333, 127.06093970420036]).addTo(map)
     .bindPopup('<b>HDI Lab</b><br>광운대학교 새빛관 704호')
