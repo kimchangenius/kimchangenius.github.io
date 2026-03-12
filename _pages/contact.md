@@ -5,7 +5,6 @@ permalink: /contact/
 description: We always welcome new member.
 nav: true
 nav_order: 5
-map: true
 ---
 
 The lab is looking for excellent undergraduate and graduate students. If you want to do research in HDI Lab, please contact Donghwa Shin.
@@ -16,15 +15,4 @@ The lab is looking for excellent undergraduate and graduate students. If you wan
 
 ## Location
 
-```geojson
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [127.0586, 37.6198]
-  },
-  "properties": {
-    "name": "HDI Lab - Kwangwoon University Saebit-gwan 704"
-  }
-}
-```
+<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=127.0486%2C37.6148%2C127.0686%2C37.6248&layer=mapnik&marker=37.6198%2C127.0586" style="width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 8px;"></iframe>

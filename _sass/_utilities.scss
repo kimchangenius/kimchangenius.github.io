@@ -458,22 +458,6 @@ nav[data-toggle="toc"] {
   width: 100%;
 }
 
-.leaflet-container img.leaflet-tile {
-  max-width: none !important;
-  max-height: none !important;
-  width: 256px !important;
-  height: 256px !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.leaflet-container .leaflet-marker-icon {
-  max-width: none !important;
-  max-height: none !important;
-}
-
 swiper-container {
   --swiper-navigation-color: var(--global-theme-color);
   --swiper-pagination-color: var(--global-theme-color);
