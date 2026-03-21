@@ -1,0 +1,27 @@
+<script>
+(function () {
+  function bind(el) {
+    if (el.dataset.emailBound) return;
+    el.dataset.emailBound = "1";
+    function openMail() {
+      try {
+        var b64 = el.getAttribute("data-email-b64");
+        if (!b64) return;
+        window.location.href = "mailto:" + atob(b64);
+      } catch (e) {}
+    }
+    el.addEventListener("click", openMail);
+    el.addEventListener("keydown", function (ev) {
+      if (ev.key === "Enter" || ev.key === " ") {
+        ev.preventDefault();
+        openMail();
+      }
+    });
+  }
+  function init() {
+    document.querySelectorAll(".email-obfuscate-link[data-email-b64]").forEach(bind);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+</script>

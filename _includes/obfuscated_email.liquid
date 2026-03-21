@@ -1,0 +1,11 @@
+{% assign _label = include.label | default: "이메일 보내기" %}
+<noscript>
+  <a href="mailto:{{ include.plain_email | encode_email }}">{{ _label }}</a>
+</noscript>
+<span
+  class="email-obfuscate-link"
+  data-email-b64="{{ include.b64 }}"
+  tabindex="0"
+  role="link"
+  style="cursor: pointer; color: var(--global-theme-color); text-decoration: underline;"
+>{{ _label }}</span>
