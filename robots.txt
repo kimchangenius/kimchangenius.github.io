@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://kimchangenius.github.io/sitemap.xml
+Sitemap: https://hdi-lab.github.io/sitemap.xml
