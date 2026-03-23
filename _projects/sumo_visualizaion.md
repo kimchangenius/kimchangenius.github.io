@@ -9,10 +9,6 @@ related_publications: false
 scholar:
   bibliography: sumo_visualizaion.bib
 _styles: |
-  .post-title {
-    font-size: clamp(1.25rem, 2.5vw, 1.85rem);
-    line-height: 1.3;
-  }
   .post-description {
     font-size: 1.125rem;
     line-height: 1.5;
