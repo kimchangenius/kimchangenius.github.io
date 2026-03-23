@@ -423,17 +423,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-optimizing-demand-responsive-transport-drt-scheduling",
+          section: "News",},{id: "projects-optimizing-demand-responsive-transport-drt-scheduling",
           title: 'Optimizing Demand-Responsive Transport (DRT) Scheduling',
           description: "Chanjin Kim",
           section: "Projects",handler: () => {
