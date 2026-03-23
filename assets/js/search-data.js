@@ -433,6 +433,16 @@ ninja.data = [{
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-project-1",
+          title: 'project 1',
+          description: "Chanjin Kim",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/DRT_ddqn/";
+            },},{id: "projects-an-interactive-visualization-system-for-microscopic-simulation-based-safety-analysis-at-urban-intersections",
+          title: 'An Interactive Visualization System for Microscopic Simulation-Based Safety Analysis at Urban Intersections',
+          description: "Jeho Lee",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/sumo_visualizaion/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
