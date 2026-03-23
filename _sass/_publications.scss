@@ -23,6 +23,21 @@
     }
   }
 
+  h2.pub-category {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-top: 0;
+    border-top: none;
+    text-align: left;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
   h2.bibliography {
     color: #5F5F5F;
     border-top: 1px solid #5F5F5F;
@@ -91,6 +106,13 @@
 
       .title {
         font-weight: bolder;
+      }
+
+      .author-role {
+        font-size: 0.875rem;
+        color: var(--global-text-color-light);
+        margin-top: 0.15rem;
+        margin-bottom: 0.35rem;
       }
 
       .author {

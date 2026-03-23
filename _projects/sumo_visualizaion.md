@@ -6,6 +6,8 @@ img: assets/img/sumo_visualizaion.png
 importance: 1
 category: Completed
 related_publications: true
+scholar:
+  bibliography: sumo_visualizaion.bib
 _styles: |
   .post-description {
     font-size: 1.125rem;
