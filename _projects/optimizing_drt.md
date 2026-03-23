@@ -17,7 +17,7 @@ _styles: |
 
 <div class="publications">
 
-<h2 class="pub-category">References</h2>
+<h2 class="pub-category references-heading">References</h2>
 
 {% bibliography --file optimizing_drt.bib --group_by none --query @* %}
 

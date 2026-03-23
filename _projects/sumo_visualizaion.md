@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "<strong>An Interactive Visualization System for Microscopic Simulation-Based Safety Analysis at Urban Intersections<strong>"
+title: "<strong>An Interactive Visualization System for Microscopic Simulation-Based Safety Analysis at Urban Intersections</strong>"
 description: Jeho Lee
 img: assets/img/sumo_visualizaion.png
 importance: 1
@@ -48,6 +48,10 @@ The interface is designed as a synchronized multi-panel analytical environment c
 
     The Configuration and Segment Playback Control enables selection of junction, MPR, time, and playback segments. Spatial and temporal views remain synchronized during animation.
 
-## References
+<div class="publications">
+
+<h2 class="pub-category references-heading">References</h2>
 
 {% bibliography --file sumo_visualizaion.bib --group_by none --query @* %}
+
+</div>
