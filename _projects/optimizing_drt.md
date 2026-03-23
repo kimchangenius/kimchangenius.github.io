@@ -27,15 +27,15 @@ This research aims to develop an intelligent scheduling framework for Demand Res
 
 The online DRT scheduling task is modeled as a Markov Decision Process (MDP). At each decision step, the state represents the real-time system context, including vehicle status, outstanding requests, and travel-related information. The action space consists of scheduling decisions such as assigning vehicles to requests or rejecting infeasible requests, while the reward is designed to balance service performance and operational efficiency. This MDP formulation provides the foundation for learning adaptive scheduling policies in dynamic and uncertain environments.
 
-#### State Space
+###### State Space
 
 To be added later
 
-#### Action Space
+###### Action Space
 
 To be added later
 
-#### Reward Design
+###### Reward Design
 
 To be added later
 
