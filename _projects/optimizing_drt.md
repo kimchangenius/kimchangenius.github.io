@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "<strong>Optimizing (DRT) Scheduling</strong>"
+title: Optimizing (DRT) Scheduling
 description: Chanjin Kim
 img: assets/img/sioux_falls_network.jpeg
 importance: 1

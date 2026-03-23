@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "<strong>An Interactive Visualization System for Microscopic Simulation-Based Safety Analysis at Urban Intersections</strong>"
+title: An Interactive Visualization System for Microscopic Simulation-Based Safety Analysis at Urban Intersections
 description: Jeho Lee
 img: assets/img/sumo_visualizaion.png
 importance: 1
