@@ -18,3 +18,6 @@ Vehicle trajectory data are generated using SUMO, from which position, speed, ac
 These data are used to compute surrogate safety indicators, and the resulting outputs are delivered to the visualization interface to support interactive analysis.
 
 {% include figure.liquid loading="eager" path="assets/img/sumo_visualizaion.png" title="System overview" alt="System overview of the SUMO-based visualization pipeline" class="img-fluid rounded z-depth-1" %}
+
+
+## Reference
