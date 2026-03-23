@@ -13,12 +13,12 @@ _styles: |
   }
 ---
 
-###Abstract
+### Abstract
 
 This project develops an interactive visualization system for microscopic, simulation-based safety analysis at urban intersections. 
 Using a SUMO-based pipeline, the system combines synchronized traffic maps, lane-level views, and time-series charts to visualize surrogate safety indicators such as TTC, MTTC, and DRAC in real time. By enabling detailed spatial-temporal comparison across different automated vehicle market penetration scenarios, the system helps reveal how increasing automated vehicle adoption can improve intersection safety through larger safety margins and more stable braking behavior.
 
-###System Overview
+### System Overview
 
 The proposed framework consists of microscopic traffic simulation, safety indicator computation, and synchronized multi-panel visualization.
 Vehicle trajectory data are generated using SUMO, from which position, speed, acceleration, and inter-vehicle distance are extracted at one-second intervals.
@@ -26,7 +26,7 @@ These data are used to compute surrogate safety indicators, and the resulting ou
 
 {% include figure.liquid loading="eager" path="assets/img/sumo_visualizaion.png" title="System overview" alt="System overview of the SUMO-based visualization pipeline" class="img-fluid rounded z-depth-1" %}
 
-###Interactive Visualization Design
+### Interactive Visualization Design
 
 The interface is designed as a synchronized multi-panel analytical environment consisting of four components:
 

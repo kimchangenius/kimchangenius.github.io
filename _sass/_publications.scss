@@ -5,7 +5,7 @@
 @use "variables" as v;
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 0.75rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -26,9 +26,9 @@
   h2.bibliography {
     color: #5F5F5F;
     border-top: 1px solid #5F5F5F;
-    padding-top: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
     text-align: right;
     font-size: 1.05rem;
     font-weight: 600;
@@ -43,9 +43,10 @@
     list-style: none;
     padding: 0;
     margin-top: 0;
+    margin-bottom: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       text-align: left;
 
       .row {
@@ -201,6 +202,11 @@
       border-color: var(--global-highlight-color);
     }
   }
+}
+
+// Layout page: References heading sits directly above .publications (sibling of <article>)
+.post > h2 + .publications {
+  margin-top: 0.35rem;
 }
 
 .citation,
