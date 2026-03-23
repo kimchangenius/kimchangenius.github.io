@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Optimizing (DRT) Scheduling
+title: "<strong>Optimizing (DRT) Scheduling</strong>"
 description: Chanjin Kim
 img: assets/img/sioux_falls_network.jpeg
 importance: 1
@@ -16,6 +16,6 @@ _styles: |
 ---
 
 
-## References
+#### **References**
 
 {% bibliography --file optimizing_drt.bib --group_by none --query @* %}
