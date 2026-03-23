@@ -433,8 +433,8 @@ ninja.data = [{
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
+            },},{id: "projects-optimizing-drt-scheduling-with-ddqn",
+          title: 'Optimizing DRT Scheduling with DDQN',
           description: "Chanjin Kim",
           section: "Projects",handler: () => {
               window.location.href = "/projects/DRT_ddqn/";
