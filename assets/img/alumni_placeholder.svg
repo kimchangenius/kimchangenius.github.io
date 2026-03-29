@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="alumniPhBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f1f4"/>
+      <stop offset="100%" stop-color="#e3e5ea"/>
+    </linearGradient>
+    <linearGradient id="alumniPhSil" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#c8cad1"/>
+      <stop offset="50%" stop-color="#aeb1ba"/>
+      <stop offset="100%" stop-color="#9599a3"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="14" fill="url(#alumniPhBg)"/>
+  <!-- One path: head blends into neck and shoulders (no floating head/body) -->
+  <path fill="url(#alumniPhSil)" d="
+    M 100 36
+    C 121 36 134 50 134 69
+    C 134 79 131 86 125 91
+    C 124 93 124 96 126 99
+    C 128 104 135 108 144 114
+    C 155 122 162 136 164 153
+    C 165 160 164 166 164 166
+    L 36 166
+    C 36 166 35 160 36 153
+    C 38 136 45 122 56 114
+    C 65 108 72 104 74 99
+    C 76 96 76 93 75 91
+    C 69 86 66 79 66 69
+    C 66 50 79 36 100 36
+    Z"/>
+</svg>
