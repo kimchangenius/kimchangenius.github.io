@@ -190,41 +190,9 @@ ul.task-list input[type="checkbox"] {
   min-width: 0;
 }
 
-// CV
+// Research listing (/research/)
 
-.cv {
-  margin-bottom: 40px;
-
-  .card {
-    background-color: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
-
-    .list-group-item {
-      background-color: inherit;
-      border-color: var(--global-divider-color);
-
-      .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
-      }
-    }
-  }
-}
-
-.table-cv-map {
-  background-color: transparent;
-  border: none;
-  color: var(--global-text-color);
-}
-
-.date-column {
-  width: 75px;
-  transform: translateX(-15px) translateY(-5px);
-}
-
-// Projects
-
-.projects {
+.research {
   a {
     text-decoration: none;
 
@@ -236,7 +204,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .card {
-    // Fixed-size thumbnails on /projects/ (grid + horizontal layouts)
+    // Fixed-size thumbnails on /research/ (grid + horizontal layouts)
     > figure {
       margin: 0;
       width: 100%;
@@ -271,7 +239,7 @@ ul.task-list input[type="checkbox"] {
       }
     }
 
-    // Undo global .card .card-img padding on project thumbnails
+    // Undo global .card .card-img padding on research thumbnails
     img.card-img {
       padding-top: 0;
     }

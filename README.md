@@ -81,9 +81,8 @@ services:
 ### 콘텐츠 원본
 
 - `_pages`: 고정 페이지(프로필, 소개, 랜딩 페이지)
-- `_projects`: 프로젝트 페이지
-- `_news`: 뉴스/공지
-- `_posts`: 블로그 포스트
+- `_research`: 연구(Research) 항목 페이지
+- `_courses`: 강의/코스 컬렉션(사용 시)
 - `_bibliography`: 논문/출판 데이터
 - `_data`: 구조화 데이터(YAML)
 
@@ -104,7 +103,7 @@ services:
 
 ## 운영 흐름
 
-1. 소스 수정 (`_pages`, `_projects`, `_news`, `_data` 등)
+1. 소스 수정 (`_pages`, `_research`, `_data` 등)
 2. 로컬 확인 (`docker compose up`)
 3. 정적 사이트 빌드 (Jekyll이 `_site` 생성)
 4. 배포 (CI 자동 배포 또는 `deploy.sh` 수동 배포)
@@ -119,8 +118,8 @@ services:
 - `_pages/about_*.md`
   - 역할: 구성원 개별 프로필 본문
   - 주의: front matter 누락/오타 시 페이지 깨짐 가능
-- `_projects/*`, `_news/*`, `_bibliography/papers.bib`
-  - 역할: 프로젝트/뉴스/논문 업데이트 핵심 위치
+- `_research/*`, `_bibliography/papers.bib`
+  - 역할: 연구 항목/논문 업데이트 핵심 위치
   - 주의: YAML/BibTeX 문법 오류 시 목록 렌더링 실패 가능
 - `_config.yml`
   - 역할: 전역 기능/플러그인/URL/수집 경로 제어

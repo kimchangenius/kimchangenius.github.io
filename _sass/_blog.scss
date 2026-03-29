@@ -41,17 +41,17 @@
   }
 }
 
-// Fixed size for all project titles (detail pages + /projects/ grid cards)
-$project-title-font-size: 2rem;
+// Fixed size for research titles (detail pages + /research/ grid cards)
+$research-title-font-size: 2rem;
 
 body.page-project-detail .post-title {
-  font-size: $project-title-font-size;
+  font-size: $research-title-font-size;
   line-height: 1.3;
   font-weight: 600;
 }
 
-.projects .card-title {
-  font-size: $project-title-font-size;
+.research .card-title {
+  font-size: $research-title-font-size;
   line-height: 1.25;
   font-weight: 600;
 }
