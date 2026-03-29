@@ -1,35 +1,35 @@
 {% if site.courses %}
   <div class="courses">
-    {% assign courses_by_year = site.courses | sort: 'year' | reverse | group_by: 'year' %}
+    {% assign sort_years = site.courses | map: 'sort_year' | compact | uniq | sort | reverse %}
+    {% for y in sort_years %}
+      {% assign year_bucket = site.courses | where: 'sort_year', y | sort: 'title' %}
+      {% for course in year_bucket %}
+      <article class="course-item">
+        <div class="course-item__header">
+          <h3 class="course-title">{{ course.title }}</h3>
 
-    {% for year_group in courses_by_year %}
-      <h2 class="year">{{ year_group.name }}</h2>
-      <div class="course-list">
-        {% assign year_courses = year_group.items | sort: 'term' %}
-        {% for course in year_courses %}
-          <div class="course-item">
-            <h3 class="course-title">
-              <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
-            </h3>
-
-            <div class="course-meta">
-              {% if course.term %}
-                <span class="course-term">{{ course.term }}</span>
+          {% if course.level == 'undergraduate' or course.level == 'graduate' %}
+            <span class="course-badge course-badge--level course-badge--level-{{ course.level }}">
+              {% if course.level == 'undergraduate' %}
+                Undergraduate
+              {% else %}
+                Graduate
               {% endif %}
+            </span>
+          {% endif %}
 
-              {% if course.instructor %}
-                <span class="course-instructor">{{ course.instructor }}</span>
-              {% endif %}
-            </div>
+          {% if course.period %}
+            <span class="course-badge course-badge--period">{{ course.period }}</span>
+          {% endif %}
+        </div>
 
-            {% if course.description %}
-              <div class="course-description">
-                {{ course.description | markdownify }}
-              </div>
-            {% endif %}
+        {% if course.description %}
+          <div class="course-description">
+            {{ course.description | markdownify }}
           </div>
-        {% endfor %}
-      </div>
+        {% endif %}
+      </article>
+      {% endfor %}
     {% endfor %}
   </div>
 {% else %}

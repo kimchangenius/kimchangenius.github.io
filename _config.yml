@@ -140,7 +140,7 @@ collections:
   research:
     output: true
   courses:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
