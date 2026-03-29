@@ -1,0 +1,44 @@
+# 각 항목의 url은 실제 대시보드·온라인 저지 주소로 교체하세요. (아래는 임시로 강좌 목록 페이지를 가리킵니다.)
+
+- title: 공학설계입문 대시보드
+  description: 팀 프로젝트 과제 제출 현황과 설계 산출물을 한곳에서 확인하는 공학설계입문 수업용 대시보드입니다.
+  category: Education
+  target: Students
+  icon: fa-solid fa-drafting-compass
+  url: http://223.194.46.219:8123/
+
+- title: 객체지향프로그래밍설계/실습 Online Judge System
+  description: 객체지향프로그래밍설계·실습 과목의 과제를 제출·채점하고 결과를 확인하는 온라인 저지 시스템입니다.
+  category: Education
+  target: Students
+  icon: fa-solid fa-laptop-code
+  url: http://128.134.44.182:8474/
+
+# --- 이전 예시 항목 (참고용, 비활성) ---
+# - title: SUMO traffic visualization notes
+#   description: Reference materials and examples for microsimulation visualization used in HDI Lab research.
+#   category: Research
+#   target: Researchers
+#   icon: fa-solid fa-road
+#   url: https://www.eclipse.org/sumo/
+#
+# - title: Jupyter Notebook hub
+#   description: Browser-based notebooks for teaching algorithms and data analysis in lab courses.
+#   category: Education
+#   target: Students
+#   icon: fa-solid fa-book-open
+#   url: https://jupyter.org/
+#
+# - title: KW academic portal
+#   description: Official Kwangwoon University systems for registration, grades, and campus notices.
+#   category: Utility
+#   target: Public
+#   icon: fa-solid fa-building-columns
+#   url: https://www.kw.ac.kr/
+#
+# - title: GitHub organization
+#   description: Open source courseware and research code repositories maintained by the lab.
+#   category: Utility
+#   target: Researchers
+#   icon: fa-brands fa-github
+#   url: https://github.com/

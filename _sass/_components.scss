@@ -53,6 +53,27 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Workbench dashboard — column count unchanged; slightly wider cards via bleed + tighter horizontal gutters
+.workbench-dashboard {
+  @media (min-width: 576px) {
+    width: calc(100% + 1.5rem);
+    max-width: calc(100% + 1.5rem);
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+
+  @media (min-width: 992px) {
+    width: calc(100% + 2.25rem);
+    max-width: calc(100% + 2.25rem);
+    margin-left: -1.125rem;
+    margin-right: -1.125rem;
+  }
+
+  .workbench-item {
+    margin-bottom: 2rem;
+  }
+}
+
 // Profile
 
 .profile {
@@ -91,6 +112,14 @@ ul.task-list input[type="checkbox"] {
 }
 
 // People page (profiles layout): position sections
+
+.people-page {
+  margin-bottom: 10rem; // 본문·푸터 사이 여백 (Advising 6.5rem보다 넉넉히)
+}
+
+.publications-page {
+  margin-bottom: 10rem; // Publications 페이지 본문·푸터 사이 여백 (People과 동일)
+}
 
 .people-position {
   border-left: 2px solid var(--global-divider-color);

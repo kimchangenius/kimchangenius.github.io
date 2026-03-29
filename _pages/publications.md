@@ -8,6 +8,8 @@ nav_order: 2
 ---
 
 
+<div class="publications-page">
+
 {% include bib_search.liquid %}
 
 <div class="publications">
@@ -29,5 +31,7 @@ nav_order: 2
 
 <h2 class="pub-category">IPR</h2>
 {% bibliography --group_by none --query @*[pub_category=IPR] %}
+
+</div>
 
 </div>
