@@ -44,6 +44,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/advising/";
           },
+        },{id: "nav-workbench",
+          title: "Workbench",
+          description: "Quick links to research tools, teaching resources, and lab utilities.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/workbench/";
+          },
         },{id: "nav-contact",
           title: "Contact",
           description: "",
