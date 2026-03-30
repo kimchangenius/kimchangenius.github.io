@@ -31,10 +31,10 @@ profile_groups:
     layout: grid
     profiles:
       - content: about_dkkim.md
-        image: alumni_placeholder.svg
+        image: dkkim_picture.png
         align: left
       - content: about_hjkwon.md
-        image: alumni_placeholder.svg
+        image: hjkwon_picture.jpg
         align: left
       - content: about_jmrhee.md
         image: jmrhee_picture.png

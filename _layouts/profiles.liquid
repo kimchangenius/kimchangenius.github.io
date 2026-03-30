@@ -25,7 +25,7 @@ layout: page
                       {% if group.layout == 'grid' %}
                         {% capture sizes %}(min-width: {{ site.max_width }}) 120px, 25vw{% endcapture %}
                       {% else %}
-                        {% capture sizes %}(min-width: {{ site.max_width }}) 200px, 30vw{% endcapture %}
+                        {% capture sizes %}(min-width: {{ site.max_width }}) 150px, 22.5vw{% endcapture %}
                       {% endif %}
                       {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
                     </div>
@@ -60,7 +60,7 @@ layout: page
               {% else %}
                 {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
               {% endif %}
-              {% capture sizes %}(min-width: {{ site.max_width }}) 200px, 30vw{% endcapture %}
+              {% capture sizes %}(min-width: {{ site.max_width }}) 150px, 22.5vw{% endcapture %}
               {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
             </div>
           {% endif %}

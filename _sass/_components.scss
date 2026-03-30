@@ -5,10 +5,11 @@
 // Checklist
 
 ul.task-list {
-  list-style-type: none; /* Remove bullets from all levels */
+  list-style-type: none;
+  /* Remove bullets from all levels */
 }
 
-ul.task-list > li ul {
+ul.task-list>li ul {
   /* Nested lists within .task-list */
   padding-inline-start: 1.5rem;
 }
@@ -204,7 +205,7 @@ ul.task-list input[type="checkbox"] {
   margin-bottom: 6.5rem; // 본문·푸터 사이 여백
 }
 
-.advising-page .people-position + .people-position {
+.advising-page .people-position+.people-position {
   margin-top: 4rem;
 }
 
@@ -215,6 +216,22 @@ ul.task-list input[type="checkbox"] {
 
 .people-position-body--advising {
   gap: 0;
+}
+
+// Advising: 연도(·계절) 블록 사이 (h2 하단선보다 약·짧게; 라이트 divider 희미해 text/bg mix)
+.people-position-body--advising-year-dividers .advising-year-group+.advising-year-group {
+  padding-top: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: min(37.5rem, 100%);
+    height: 1px;
+    min-height: 1px;
+    margin-top: 0.25rem;
+    margin-bottom: 1.05rem;
+    background-color: color-mix(in srgb, var(--global-text-color) 11%, var(--global-bg-color) 89%);
+  }
 }
 
 .advising-year-group {
@@ -249,26 +266,29 @@ ul.task-list input[type="checkbox"] {
 }
 
 .advising-entry__title-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.4rem 0.6rem;
   margin-bottom: 0.15rem;
+  line-height: 1.5;
 
   .advising-entry__title {
+    display: inline-block;
+    vertical-align: top;
     margin-bottom: 0;
-    flex: 0 1 auto;
+    margin-right: 0.6rem;
     max-width: min(40rem, 100%);
-    min-width: 0;
-    line-height: 1.5;
     word-break: keep-all;
     overflow-wrap: break-word;
     line-break: normal;
     hyphens: manual;
   }
 
-  .advising-badge {
-    transform: translateY(-0.12em);
+  .advising-entry__badges {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 0.6rem;
+    vertical-align: top;
+    max-width: 100%;
+    padding-top: 0.12em;
   }
 }
 
@@ -323,8 +343,8 @@ ul.task-list input[type="checkbox"] {
 
 .people-profile-row .people-profile-image.profile {
   flex-shrink: 0;
-  width: 200px;
-  max-width: 200px;
+  width: 150px;
+  max-width: 150px;
 }
 
 .people-profile-body {
@@ -346,8 +366,9 @@ ul.task-list input[type="checkbox"] {
   }
 
   .card {
+
     // Fixed-size thumbnails on /research/ (grid + horizontal layouts)
-    > figure {
+    >figure {
       margin: 0;
       width: 100%;
       aspect-ratio: 16 / 9;
@@ -482,7 +503,7 @@ ul.task-list input[type="checkbox"] {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.wechat-modal > img {
+.wechat-modal>img {
   display: block;
   position: relative;
   top: 50%;
@@ -493,7 +514,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 400px) {
-  .wechat-modal > img {
+  .wechat-modal>img {
     width: 100%;
   }
 }
